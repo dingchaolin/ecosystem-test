@@ -29,7 +29,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'https://github.com/dingchaolin/ecosystem-test.git',
       path : '/data/test',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      'post-deploy' : 'npm install && pm2 start ./bin/www --env production'
     },
     dev : {
       user : 'root',
@@ -37,7 +37,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'https://github.com/dingchaolin/ecosystem-test.git',
       path : '/data/test',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env dev',
+      'post-deploy' : 'npm install && pm2 start ./bin/www --env dev',
       env  : {
         NODE_ENV: 'dev'
       }
