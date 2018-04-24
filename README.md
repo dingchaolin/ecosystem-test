@@ -75,6 +75,10 @@
 ### 4. 启动程序
 - pm2 deploy ecosystem.json dev
 
-
+### 5. 依赖环境
+- node
+- pm2
+- git
+- 也可以在 pre-setup 这个配置项中 添加 "yum install node ; yum install pm2 ; yum install git"
 
 
