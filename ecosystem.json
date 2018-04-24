@@ -27,7 +27,7 @@
       "user" : "root",
       "host" : "192.168.64.185",
       "ref"  : "origin/master",
-      "repo" : "git@github.com:dingchaolin/ecosystem-test.git",
+      "repo" : "https://github.com/dingchaolin/ecosystem-test.git",
       "path" : "/data/test",
       //"pre-setup" : "yum install git",//contos
       "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
@@ -36,7 +36,7 @@
       "user" : "root",
       "host" : "192.168.64.185",
       "ref"  : "origin/master",
-      "repo" : "git@github.com:dingchaolin/ecosystem-test.git",
+      "repo" : "https://github.com/dingchaolin/ecosystem-test.git",
       "path" : "/data/test",
       //"pre-setup" : "yum install git",
       "post-deploy" : "npm install ; pm2 startOrRestart ecosystem.json --env dev",

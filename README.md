@@ -68,9 +68,9 @@
       "post-deploy" : "部署后需要执行的命令，此处填写npm install && pm2 startOrRestart ecosystem.json --env production"
     },
 ```
-
+- repo 如果使用 git@github.com:dingchaolin/ecosystem-test.git 需要先在服务器生成一个pub key 添加到github上
 ### 3. 部署
-- 
+- git@github.com:dingchaolin/ecosystem-test.git
 
 
 
