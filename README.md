@@ -69,8 +69,12 @@
     },
 ```
 - repo 如果使用 git@github.com:dingchaolin/ecosystem-test.git 需要先在服务器生成一个pub key 添加到github上
-### 3. 部署
-- git@github.com:dingchaolin/ecosystem-test.git
+### 3. 上传代码
+- pm2 deploy ecosystem.json dev setup
+
+### 4. 启动程序
+- pm2 deploy ecosystem.json dev
+
 
 
 
