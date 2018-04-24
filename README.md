@@ -81,4 +81,11 @@
 - git
 - 也可以在 pre-setup 这个配置项中 添加 "yum install node ; yum install pm2 ; yum install git"
 
+### 6. 输入密码
+- 现在部署过程中，会出现多次输入密码的情况 可以在服务器上设置一个免密登录的账号专门用于自动化部署
+
+### 7. 更新代码
+- pm2 deploy production update
+- pm2 deploy production revert 1
+- pm2 deploy production exec "pm2 reload all"
 
