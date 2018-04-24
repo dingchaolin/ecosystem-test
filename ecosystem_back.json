@@ -24,20 +24,20 @@
    */
   "deploy" : {
     "production" : {
-      "user" : "",
+      "user" : "root",
       "host" : "127.0.0.1",
       "ref"  : "origin/master",
       "repo" : "https://github.com/dingchaolin/ecosystem-test.git",
-      "path" : "/Users/chaolinding/deploy",
+      "path" : "/data/test",
       //"pre-setup" : "yum install git",//contos
       "post-deploy" : "git pull origin master && npm install && pm2 startOrRestart ecosystem.json --env production"
     },
     "dev" : {
-      "user" : "",
-      "host" : "127.0.0.1",
+      "user" : "root",
+      "host" : "192.168.64.185",
       "ref"  : "origin/master",
       "repo" : "https://github.com/dingchaolin/ecosystem-test.git",
-      "path" : "/Users/chaolinding/deploy",
+      "path" : "/data/test",
       //"pre-setup" : "yum install git",
       "post-deploy" : "git pull origin master; npm install ; pm2 startOrRestart ecosystem.json --env dev",
       "env"  : {
