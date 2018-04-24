@@ -30,7 +30,7 @@
       "repo" : "https://github.com/dingchaolin/ecosystem-test.git",
       "path" : "/data/test",
       //"pre-setup" : "yum install git",//contos
-      "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
+      "post-deploy" : "git pull origin master && npm install && pm2 startOrRestart ecosystem.json --env production"
     },
     "dev" : {
       "user" : "root",
@@ -39,7 +39,7 @@
       "repo" : "https://github.com/dingchaolin/ecosystem-test.git",
       "path" : "/data/test",
       //"pre-setup" : "yum install git",
-      "post-deploy" : "npm install ; pm2 startOrRestart ecosystem.json --env dev",
+      "post-deploy" : "git pull origin master; npm install ; pm2 startOrRestart ecosystem.json --env dev",
       "env"  : {
         "NODE_ENV": "dev"
       }
